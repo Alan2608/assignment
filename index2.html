@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        #container{
+            width: 250px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: blue;
+            background-image: url(placeholder-image.png);
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            border-radius: 5%;
+            box-sizing: border-box;
+            flex-basis: 20%;
+            flex-flow: row wrap;
+            box-sizing: border-box;
+        }
+        #box{
+            width: 100%;
+            height: 50px;
+            border: 1px solid black;
+            background-color: white;
+            align-self: flex-end;
+            text-align: center;
+            line-height: 50px;
+           
+            border-radius: 5%;
+            box-shadow:inset 0 0 14px #2d111b ;
+            
+
+        }
+        #grid{
+           
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+            grid-auto-rows: auto auto;
+        }
+        @media screen and (max-width: 1024px) {
+#grid{
+grid-template-columns: repeat(3, 1fr);
+}
+}
+ 
+@media screen and (max-width: 768px) {
+#grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+ 
+@media screen and (max-width: 414px) {
+#grid{
+grid-template-columns: repeat(1, 1fr);
+}
+}
+     
+       
+    </style>
+</head>
+<body>
+    <h1>Gallery Heading</h1>
+    <div id="grid">
+    <div id="container">
+        <div id="box">Image Title</div>
+
+    </div>
+    <div id="container">
+        <div id="box">Image Title</div>
+
+    </div>
+    <div id="container">
+        <div id="box">Image Title</div>
+
+    </div>
+    <div id="container">
+        <div id="box">Image Title</div>
+
+    </div>
+    <div id="container">
+        <div id="box">Image Title</div>
+
+    </div>
+    <div id="container">
+        <div id="box">Image Title</div>
+
+    </div>
+    <div id="container">
+        <div id="box">Image Title</div>
+
+    </div>
+    <div id="container">
+        <div id="box">Image Title</div>
+
+    </div>
+    <div id="container">
+        <div id="box">Image Title</div>
+
+    </div>
+    <div id="container">
+        <div id="box">Image Title</div>
+
+    </div>
+   
+   </div>
+</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus a laudantium perspiciatis sint consectetur dolorum suscipit, eos impedit voluptates! Distinctio cum eveniet modi repudiandae quibusdam suscipit veniam aliquid repellendus?</p>
+</body>
+</html>
